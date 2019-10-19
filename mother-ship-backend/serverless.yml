@@ -73,3 +73,5 @@ resources:
   - ${file(resources/msConfigs/mother-ship-user-pool.yml)}
   # Cognito Identity Pool
   - ${file(resources/msConfigs/mother-ship-identity-pool.yml)}
+  # S3 Bucket
+  - ${file(resources/msConfigs/mother-ship-bucket.yml)}
