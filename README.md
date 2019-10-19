@@ -3,12 +3,10 @@
 </p>
 
 # MotherShip
----
 
 AWS S3 client for File Management
 
 ## Stack
----
 
  - Serverless Framework [More](https://serverless.com/)
  - GraphQL [More](https://graphql.org/)
