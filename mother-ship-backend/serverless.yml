@@ -9,6 +9,8 @@ plugins:
 # serverless-webpack configuration
 # Enable auto-packing of external modules
 custom:
+  stage: ${opt:stage, self:provider.stage}
+  region: ${opt:region, self:provider.region}
   MotherShipTable: ${self:custom.stage}-mother-ship
   tableThroughputs:
     prod: 5
