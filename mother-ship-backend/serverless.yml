@@ -27,12 +27,26 @@ provider:
   runtime: nodejs10.16
   stage: dev
   region: eu-west-2
-  # To load environment variables externally
-  # rename env.example to env.yml and uncomment
-  # the following line. Also, make sure to not
-  # commit your env.yml.
-  #
-  #environment: ${file(env.yml):${self:provider.stage}}
+  environment:
+    MotherShipTable: ${self:custom.MotherShipTable}
+  
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:GetRecords
+        - dynamodb:GetShardIterator
+        - dynamodb:DescribeStream
+        - dynamodb:ListStream
+      
+      Resource:
+        - "Fn::GetAtt": [ MotherShipTable, Arn ]
 
 functions:
   graphql:
