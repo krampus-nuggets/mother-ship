@@ -69,3 +69,5 @@ functions:
 resources:
   # DynamoDB
   - ${file(resources/msConfigs/mother-ship-table.yml)}
+  # Cognito Userpool
+  - ${file(resources/msConfigs/mother-ship-user-pool.yml)}
