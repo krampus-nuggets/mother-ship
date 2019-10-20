@@ -5,6 +5,7 @@ import { hello, getAllUploads } from "./query";
 
 export const resolvers = {
     Query: {
-        hello: (root, args, context) => hello(args, context)
+        hello: (root, args, context) => hello(args, context),
+        getAllUploads: (root, args, context) => getAllUploads(args, context)
     }
 }
