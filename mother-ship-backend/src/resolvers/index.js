@@ -2,6 +2,7 @@
 import { hello, getAllUploads } from "./query";
 
 // Import - Mutations
+import { fileUpload } from "./mutation";
 
 export const resolvers = {
     Query: {
