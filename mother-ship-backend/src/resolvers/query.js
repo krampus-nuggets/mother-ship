@@ -10,7 +10,7 @@ export const getAllUploads = async (args, context) => {
     }
     try {
         const result = await dynamoLib.call("scan", params);
-        result.Items.map((item) => (
+        return result.Items.map((item) => (
             {
                 userId: item.pk,
                 itemId: item.sk,
