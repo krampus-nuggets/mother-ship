@@ -13,6 +13,13 @@ type Upload {
     fileType: String!
 }
 
+"""
+QUERY
+"""
+type Query {
+    hello: String!,
+    getAllUploads(userId: String!): [Upload!]!
+}
 
 """
 A hello world Query
