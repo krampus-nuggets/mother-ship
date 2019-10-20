@@ -28,8 +28,9 @@ MUTATION
 type Mutation {
     fileUpload(
         title: String!,
-        fileType: String!,
-        fileURL: String!
+        fileSize: String!,
+        fileURL: String!,
+        fileType: String!
     ): Upload
 }
 
