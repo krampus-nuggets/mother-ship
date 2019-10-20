@@ -22,10 +22,14 @@ type Query {
 }
 
 """
-A hello world Query
+MUTATION
 """
-type Query {
-     hello: String!
+type Mutation {
+    fileUpload(
+        title: String!,
+        fileType: String!,
+        fileURL: String!
+    ): Upload
 }
 
 `
