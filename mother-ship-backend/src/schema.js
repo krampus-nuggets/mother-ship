@@ -18,6 +18,7 @@ QUERY
 """
 type Query {
     hello: String!,
+    getAllUploads: [Upload],
     getAllUploads(userId: String!): [Upload!]!
 }
 
