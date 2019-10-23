@@ -6,6 +6,8 @@
 
 Minimalistic frontend built with ReactJS and Chakra-UI Component Library ontop of a NodeJS server with authentication via AWS Cognito and Amplify. Connected to a GraphQL API via Apollo Client with CI/CD provided by Netlify.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/828e3798-ab31-4728-bb28-276a8412b813/deploy-status)](https://app.netlify.com/sites/mother-ship/deploys)
+
 ## Stack
 
  - NodeJS [More](https://nodejs.org/en/)
