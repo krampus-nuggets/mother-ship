@@ -16,3 +16,15 @@ Minimalistic frontend built with ReactJS and Chakra-UI Component Library ontop o
  - AWS Amplify [More](https://aws-amplify.github.io/)
  - Apollo-GraphQL [More](https://www.apollographql.com)
 
+# Where/Who I Learned From
+
+### Shout out to the broski - [Amo](https://github.com/AmoDinho)👨🏽‍🏭
+
+## Resources
+
+ - [Code JavaScript](https://github.com/pimp-my-book/CodeJavaScript)
+ - [Relational DB to Single Table DynamoDB](https://www.trek10.com/blog/dynamodb-single-table-relational-modeling/)
+ - [How to GraphQL](https://www.howtographql.com/)
+ - [GraphQL - JavaScript Docs](https://graphql.org/graphql-js/)
+ - [Serverless Fullstack](https://serverless-stack.com/)
+ - [Serverless Framework - AWS Docs](https://serverless.com/framework/docs/providers/aws/)
