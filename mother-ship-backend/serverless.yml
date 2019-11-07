@@ -1,3 +1,5 @@
+org: krampusnuggets
+app: mother-ship
 # NOTE: update this with your service name
 service: mother-ship-backend
 
