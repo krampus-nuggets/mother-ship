@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/core";
-import { Link, Box, Heading } from "@chakra-ui/core";
+import { Box, Heading } from "@chakra-ui/core";
 import Home from "./containers/Home";
 import "./styles/styles.css";
 
