@@ -15,8 +15,8 @@ custom:
   region: ${opt:region, self:provider.region}
   MotherShipTable: ${self:custom.stage}-mother-ship
   tableThroughputs:
-    prod: 5
-    default: 2
+    prod: 1
+    default: 1
   tableThroughput: ${self:custom.tableThroughputs.${self:custom.stage}, self:custom.tableThroughputs.default}
   webpack:
     webpackConfig: ./webpack.config.js
