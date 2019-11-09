@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider, ColorModeProvider } from "@chakra-ui/core";
+import { Link, Box, Heading } from "@chakra-ui/core";
+import Home from "./containers/Home";
+import "./styles/styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return(
+    <ThemeProvider>
+      <ColorModeProvider>
+        <div id="mother-ship-nav">
+          <Box display="flex" justifyContent="space-between" bg="#ff8b0f" m={ 0 } p={ 2 } color="white">
+            <Heading className="ms-nav-head" bg="black" color="#ff8b0f" rounded="md" p={ 2 } size="md" textAlign="center">
+              Mother-Ship
+            </Heading>
+          </Box>
+        </div>
+        <Home/>
+      </ColorModeProvider>
+    </ThemeProvider>
+  )
 }
 
 export default App;
