@@ -25,9 +25,9 @@ Resources:
           Projection:
             ProjectionType: "ALL"
           ProvisionedThroughput:
-            ReadCapacityUnits: 1 #${self:custom.tableThroughput}
-            WriteCapacityUnits: 1 #${self:custom.tableThroughput}
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
       # Set the capacity based on the stage
       ProvisionedThroughput:
-        ReadCapacityUnits: 1 #${self:custom.tableThroughput}
-        WriteCapacityUnits: 1 #${self:custom.tableThroughput}
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
