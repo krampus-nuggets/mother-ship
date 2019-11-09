@@ -1,23 +1,27 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #09d3ac;
-  }
-  
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap');
+
+body {
+    margin: 0 auto 0 auto;
+    max-width: 1366px;
+    font-family: 'Lexend Exa', sans-serif;
+    -webkit-font-smoothin: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#mother-ship-nav {
+    max-height: 90px !important;
+}
+
+#ms-home {
+    margin: auto;
+}
+
+.ms-nav-head {
+    margin: auto;
+}
+
+.ms-image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
