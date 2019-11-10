@@ -24,7 +24,7 @@ const Home = () => {
                 />
                 <Card
                     id="card-row-two"
-                    href="/"
+                    href="/Login"
                     animation={ float }
                     title="Your Files"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573316252/mother-ship/your-file_wqvlxp.svg"
