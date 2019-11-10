@@ -3,7 +3,7 @@ import { Box, Image, Heading } from "@chakra-ui/core";
 
 const Card = (props) => {
     return(
-        <Box maxW="200px" m={10} p={5} bg="#ff8b0f" rounded="lg" overflow="hidden">
+        <Box margin="auto" animation={ props.animation } height="40%" width="45%" pt="35px" bg="#ff8b0f" rounded="lg" overflow="hidden">
             <Image 
                 className="ms-image-center"
                 src={ props.imageSRC }
