@@ -6,7 +6,7 @@ import "../styles/styles.css";
 
 const Home = () => {
     return(
-        <div id="ms-home" clasName="ms-body-width">
+        <div id="ms-home" className="ms-body-width ms-body-components">
             <Grid 
                 className="ms-home-grid ms-body-width"
                 width="1440px"
