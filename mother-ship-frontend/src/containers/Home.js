@@ -6,8 +6,15 @@ import "../styles/styles.css";
 
 const Home = () => {
     return(
-        <div id="ms-home">
-            <Box>
+        <div id="ms-home" clasName="ms-body-width">
+            <Grid 
+                className="ms-home-grid ms-body-width"
+                width="1440px"
+                templateColumns="repeat(2,1fr)"
+                templateRows="repeat(1,1fr)"
+                gridAutoFlow="row dense"
+                gap={5}
+            >
                 <Card
                     id="card-row-one" 
                     title="Upload File"
