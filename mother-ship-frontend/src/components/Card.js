@@ -12,6 +12,7 @@ const Card = (props) => {
                 alt="upload-file"
             />
             <Box>
+                <Link href={ props.href } isInternal>
                 <Heading
                     className="ms-nav-head"
                     width="40%"
@@ -27,6 +28,7 @@ const Card = (props) => {
                 >
                     { props.title }
                 </Heading>
+                </Link>
             </Box>
         </Box>
     )
