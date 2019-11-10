@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Heading } from "@chakra-ui/core";
+import { Box, Image, Heading, Link } from "@chakra-ui/core";
 
 const Card = (props) => {
     return(
