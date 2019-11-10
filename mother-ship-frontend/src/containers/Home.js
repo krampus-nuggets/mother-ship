@@ -17,12 +17,14 @@ const Home = () => {
             >
                 <Card
                     id="card-row-one"
+                    href="/SignUp"
                     animation={ float }
                     title="Upload File"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573308687/mother-ship/upload-file_wde7mi.svg"
                 />
                 <Card
                     id="card-row-two"
+                    href="/"
                     animation={ float }
                     title="Your Files"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573316252/mother-ship/your-file_wqvlxp.svg"
