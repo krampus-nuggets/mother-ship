@@ -2,18 +2,16 @@ import React from "react";
 import { FormHelperText, FormLabel, FormControl, Button, Input, Heading, Box } from "@chakra-ui/core";
 import "../styles/styles.css";
 
-//const SignUp = () => {
-    // Addition Func - Later
-    // ******
-    const SignUp = () => {
+const SignUp = () => {
+    const RenderSignUpForm = () => {
         return(
             <div
-                id="ms-signup"
+                id="ms-render-signup-form"
             >
             <Box
-            m="8% 35% 10% 35%"
-            display="block" 
-            color="White"
+                m="8% 35% 10% 35%"
+                display="block" 
+                color="White"
             >
                 <Heading>Sign-Up</Heading>
                 <form size="md">
@@ -51,13 +49,48 @@ import "../styles/styles.css";
         )
     }
 
-    //return(
-      //  <div id="ms-signup" className="ms-body-width">
-          //  {
-        //        RenderForm
-           // }
-        //</div>
-    //)
-//}
+    const RenderConfirmationForm = () => {
+        return(
+            <div id="ms-render-confirmation-form">
+                <Box
+                    m="8% 35% 10% 35%"
+                    display="block"
+                    color="white"
+                >
+                    <Heading>Confirmation Code</Heading>
+                    <form size="md">
+                        <FormControl size="md">
+                            <FormLabel>Enter Below</FormLabel>
+                                <Input
+                                    id="ms-confirmation-code"
+                                    type="text"
+                                    aria-describedby="ms-confirmation-code-helper"
+                                />
+                                <FormHelperText id="ms-confirmation-code-helper" color="white">
+                                    We already have your details, so pffffttt<span role="img" aria-label="Laugh">😂</span>
+                                </FormHelperText>
+                            <Button
+                                mt={ 4 }
+                                bg="Black"
+                                color="White"
+                                type="submit"
+                            >
+                                Sumbit
+                            </Button>
+                        </FormControl>
+                    </form>
+                </Box>
+            </div>
+        )
+    }
+
+    return(
+        <div id="ms-signup" className="ms-body-width">
+            {
+                RenderSignUpForm()
+            }
+        </div>
+    )
+}
 
 export default SignUp
