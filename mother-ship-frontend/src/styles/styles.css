@@ -3,7 +3,7 @@
 body {
     margin: 0 auto 0 auto;
     font-family: 'Lexend Exa', sans-serif;
-    -webkit-font-smoothin: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
 
