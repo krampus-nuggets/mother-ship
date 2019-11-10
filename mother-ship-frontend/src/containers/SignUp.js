@@ -84,4 +84,13 @@ import "../styles/styles.css";
         )
     }
 
+    return(
+        <div id="ms-signup" className="ms-body-width">
+            {
+                RenderSignUpForm()
+            }
+        </div>
+    )
+}
+
 export default SignUp
