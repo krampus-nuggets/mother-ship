@@ -16,12 +16,18 @@ const Home = () => {
                 gap={5}
             >
                 <Card
-                    id="card-row-one" 
+                    id="card-row-one"
                     animation={ float }
                     title="Upload File"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573308687/mother-ship/upload-file_wde7mi.svg"
                 />
-            </Box>
+                <Card
+                    id="card-row-two"
+                    animation={ float }
+                    title="Your Files"
+                    imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573316252/mother-ship/your-file_wqvlxp.svg"
+                />
+            </Grid>
         </div>
     )
 }
