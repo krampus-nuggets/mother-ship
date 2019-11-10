@@ -2,18 +2,30 @@
 
 body {
     margin: 0 auto 0 auto;
-    max-width: 1366px;
     font-family: 'Lexend Exa', sans-serif;
     -webkit-font-smoothin: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
 
 #mother-ship-nav {
-    max-height: 90px !important;
+    max-height: 100px !important;
 }
 
 #ms-home {
     margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#ms-body-components {
+    background-image: url("https://res.cloudinary.com/wemakeart/image/upload/v1573323789/mother-ship/ms-background_uov2sz.png");
+    position: fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .ms-nav-head {
@@ -24,4 +36,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.ms-body-width {
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto 0 auto
 }

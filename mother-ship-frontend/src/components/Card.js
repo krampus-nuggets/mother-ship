@@ -3,7 +3,7 @@ import { Box, Image, Heading } from "@chakra-ui/core";
 
 const Card = (props) => {
     return(
-        <Box maxW="200px" m={10} p={5} bg="#ff8b0f" rounded="lg" overflow="hidden">
+        <Box margin="auto" animation={ props.animation } height="40%" width="45%" pt="35px" bg="#ff8b0f" rounded="lg" overflow="hidden">
             <Image 
                 className="ms-image-center"
                 src={ props.imageSRC }
@@ -12,7 +12,19 @@ const Card = (props) => {
                 alt="upload-file"
             />
             <Box>
-                <Heading class="ms-nav-head" size="md" textAlign="center" rounded="md" bg="black" color="#ff8b0f" p={2} >
+                <Heading
+                    className="ms-nav-head"
+                    width="40%"
+                    mr="auto"
+                    ml="auto"
+                    mt="40px"
+                    size="sm"
+                    textAlign="center"
+                    rounded="md"
+                    bg="black"
+                    color="#ff8b0f"
+                    p={2}
+                >
                     { props.title }
                 </Heading>
             </Box>
