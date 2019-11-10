@@ -12,7 +12,19 @@ const Card = (props) => {
                 alt="upload-file"
             />
             <Box>
-                <Heading class="ms-nav-head" size="md" textAlign="center" rounded="md" bg="black" color="#ff8b0f" p={2} >
+                <Heading
+                    className="ms-nav-head"
+                    width="40%"
+                    mr="auto"
+                    ml="auto"
+                    mt="40px"
+                    size="sm"
+                    textAlign="center"
+                    rounded="md"
+                    bg="black"
+                    color="#ff8b0f"
+                    p={2}
+                >
                     { props.title }
                 </Heading>
             </Box>
