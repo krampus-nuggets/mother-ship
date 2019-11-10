@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Heading, Image } from "@chakra-ui/core";
+import { Grid } from "@chakra-ui/core";
 import Card from "../components/Card";
+import { float } from "../styles/styles";
 import "../styles/styles.css";
 
 const Home = () => {
