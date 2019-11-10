@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/core";
-import { Box, Heading } from "@chakra-ui/core";
-import Home from "./containers/Home";
+import { Box, Heading, Link } from "@chakra-ui/core";
+import Routes from "./Routes";
 import "./styles/styles.css";
 
 const App = () => {
