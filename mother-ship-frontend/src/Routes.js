@@ -8,4 +8,5 @@ export default () =>
     <Switch>
         <Route path="/" exact component={ Home } />
         <Route path="/SignUp" exact component={ SignUp } />
+        <Route path="/Login" exact component={ Login } />
     </Switch>
