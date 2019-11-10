@@ -6,7 +6,7 @@ import "../styles/styles.css";
 
 const Home = () => {
     return(
-        <div id="ms-home" clasName="ms-body-width">
+        <div id="ms-home" className="ms-body-width ms-body-components">
             <Grid 
                 className="ms-home-grid ms-body-width"
                 width="1440px"
@@ -17,12 +17,14 @@ const Home = () => {
             >
                 <Card
                     id="card-row-one"
+                    href="/SignUp"
                     animation={ float }
                     title="Upload File"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573308687/mother-ship/upload-file_wde7mi.svg"
                 />
                 <Card
                     id="card-row-two"
+                    href="/"
                     animation={ float }
                     title="Your Files"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573316252/mother-ship/your-file_wqvlxp.svg"
