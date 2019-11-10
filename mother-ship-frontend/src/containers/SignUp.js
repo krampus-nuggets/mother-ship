@@ -2,13 +2,11 @@ import React from "react";
 import { FormHelperText, FormLabel, FormControl, Button, Input, Heading, Box } from "@chakra-ui/core";
 import "../styles/styles.css";
 
-//const SignUp = () => {
-    // Addition Func - Later
-    // ******
     const SignUp = () => {
+    const RenderSignUpForm = () => {
         return(
             <div
-                id="ms-signup"
+                id="ms-render-signup-form"
             >
             <Box
             m="8% 35% 10% 35%"
