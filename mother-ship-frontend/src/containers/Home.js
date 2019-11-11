@@ -19,14 +19,14 @@ const Home = () => {
                     id="card-row-one"
                     href="/SignUp"
                     animation={ float }
-                    title="Upload File"
+                    title="Register"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573308687/mother-ship/upload-file_wde7mi.svg"
                 />
                 <Card
                     id="card-row-two"
                     href="/Login"
                     animation={ float }
-                    title="Your Files"
+                    title="Login"
                     imageSRC="https://res.cloudinary.com/wemakeart/image/upload/v1573316252/mother-ship/your-file_wqvlxp.svg"
                 />
             </Grid>
