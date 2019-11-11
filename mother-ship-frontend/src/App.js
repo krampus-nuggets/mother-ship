@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/core";
-import { Box, Heading, Link } from "@chakra-ui/core";
+import NavBar from "./components/NavBar";
 import Routes from "./Routes";
 import "./styles/styles.css";
 
