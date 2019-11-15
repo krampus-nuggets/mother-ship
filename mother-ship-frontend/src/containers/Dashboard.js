@@ -1,6 +1,13 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/core";
 
+/*
+TO-DO:
+=====
+1. Review solutions for displaying AWS S3 Objects w/ GraphQL Datasets
+2. Import data to block & create listing component
+*/
+
 
 const Dashboard = () => {
     return(
