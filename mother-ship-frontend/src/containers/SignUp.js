@@ -75,7 +75,7 @@ const SignUp = () => {
                                 color="White"
                                 type="submit"
                             >
-                                Sumbit
+                                Submit
                             </Button>
                         </FormControl>
                     </form>
