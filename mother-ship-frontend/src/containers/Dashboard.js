@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Button, Heading, Link } from "@chakra-ui/core";
+import { Box, Heading } from "@chakra-ui/core";
+
+/*
+TO-DO:
+=====
+1. Review solutions for displaying AWS S3 Objects w/ GraphQL Datasets
+2. Import data to block & create listing component
+*/
+
 
 const Dashboard = () => {
     return(
@@ -21,7 +29,7 @@ const Dashboard = () => {
                 color="#ff8b0f"
                 m="auto"
                 width="1000px"
-                height="550px"
+                height="400px"
                 borderRadius="15px"
             >
                 
