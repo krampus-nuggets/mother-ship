@@ -29,7 +29,7 @@ const Dashboard = () => {
                 color="#ff8b0f"
                 m="auto"
                 width="1000px"
-                height="550px"
+                height="400px"
                 borderRadius="15px"
             >
                 
