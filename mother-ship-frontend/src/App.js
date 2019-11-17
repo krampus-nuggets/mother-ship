@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider, ColorModeProvider } from "@chakra-ui/core";
 import NavBar from "./components/NavBar";
+import LowerNav from "./components/LowerNav";
 import Routes from "./Routes";
 import "./styles/styles.css";
 
@@ -8,11 +9,14 @@ const App = () => {
   return(
     <ThemeProvider>
       <ColorModeProvider>
-        <div id="mother-ship-nav">
-            <NavBar />
-        </div>
         <div id="ms-body-components">
-          <Routes />
+          <div id="mother-ship-nav">
+              <NavBar />
+              <LowerNav />
+          </div>
+          <div id="ms-body-containers">
+            <Routes />
+          </div>
         </div>
       </ColorModeProvider>
     </ThemeProvider>
