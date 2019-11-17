@@ -4,6 +4,7 @@ import Home from "./containers/Home";
 import SignUp from "./containers/SignUp";
 import Login from "./containers/Login";
 import Dashboard from "./containers/Dashboard";
+import UploadFile from "./containers/UploadFile";
 
 export default () => 
     <Switch>
