@@ -25,7 +25,7 @@ const LowerNav = () => {
                     color="White"
                     border={ 0 }
                     borderRadius={ 5 }
-                    _hover={{ color: "Black", bg: "White" }}
+                    _hover={{ color: "#ff8b0f" }}
                 >
                     Upload File
                 </Link>
@@ -40,7 +40,7 @@ const LowerNav = () => {
                     color="White"
                     border={ 0 }
                     borderRadius={ 5 }
-                    _hover={{ color: "Black", bg: "White" }}
+                    _hover={{ color: "#ff8b0f" }}
                 >
                     Dashboard
                 </Link>
@@ -55,7 +55,7 @@ const LowerNav = () => {
                     color="White"
                     border={ 0 }
                     borderRadius={ 5 }
-                    _hover={{ color: "Black", bg: "White" }}
+                    _hover={{ color: "#ff8b0f" }}
                 >
                     Your Profile
                 </Link>
