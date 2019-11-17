@@ -8,8 +8,9 @@ const Home = () => {
     return(
         <div id="ms-home" className="ms-body-width ms-body-components">
             <Grid 
-                className="ms-home-grid ms-body-width"
+                className="ms-body-width"
                 width="1440px"
+                height="600px"
                 templateColumns="repeat(2,1fr)"
                 templateRows="repeat(1,1fr)"
                 gridAutoFlow="row dense"
