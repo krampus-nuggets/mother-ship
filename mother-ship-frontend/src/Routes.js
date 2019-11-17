@@ -8,8 +8,9 @@ import UploadFile from "./containers/UploadFile";
 
 export default () => 
     <Switch>
-        <Route path="/" exact component={ Home } />
-        <Route path="/SignUp" exact component={ SignUp } />
-        <Route path="/Login" exact component={ Login } />
-        <Route path="/Dashboard" exact component={ Dashboard } />
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/SignUp" component={ SignUp } />
+        <Route exact path="/Login" component={ Login } />
+        <Route exact path="/Dashboard" component={ Dashboard } />
+        <Route exact path="/UploadFile" component={ UploadFile } />
     </Switch>
