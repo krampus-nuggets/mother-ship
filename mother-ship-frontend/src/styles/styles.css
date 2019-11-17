@@ -29,6 +29,10 @@ body {
     background-size: cover;
 }
 
+#ms-body-containers {
+    margin: auto;
+}
+
 .ms-nav-head {
     margin: auto;
 }
