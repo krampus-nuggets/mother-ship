@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Input, Heading, FormControl, FormLabel, Select, Button } from "@chakra-ui/core";
+import FileUpload from "../components/FileUpload";
 
 const UploadFile = () => {
     return(
