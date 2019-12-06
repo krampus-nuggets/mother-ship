@@ -8,6 +8,45 @@ import config from "../res/configs/config";
 
 
 const FileUpload = () => {
+    const [ title, setTitle ] = useState("");
+    let [ fileSize, setFileSize ] = useState("");
+    const [ fileURL, setFileURL ] = useState("");
+    const [ fileType, setFileType ] = useState("");
+    let [ file ] = useState(null);
+
+    const handleFileChange = async e => {
+        file = e.target.files[0];
+        console.log(file);
+
+        try {
+            fileSize = file.size;
+
+            const attachment = file
+            ?   await s3Upload(file)
+            :   null;
+
+            const fileURI = await Storage.get(`${ attachment }`, { level: "private" });
+
+            setFileURL(`${ fileURI }`);
+
+            setFileSize(`${ file.size }`);
+
+            console.log(file);
+            alert(`Upload created with file -> ${ attachment } `)
+        }
+        catch(e) {
+            alert(e);
+        }
+    }
+
+    const handleSubmit = async e => {
+        if ( file && file.size > config.s3.SIZE ) {
+            alert(
+                `WARNING - File must be smaller than ${ config.MAX_ATTACHMENT_SIZE/1000000 }MB`
+            );
+        }
+    }
+
     return(
         <div id="ms-file-upload">
             <Box
@@ -16,46 +55,71 @@ const FileUpload = () => {
                 color="White"
             >
                 <Heading>Upload File</Heading>
-                <FormControl size="md">
-                    <FormLabel pb={ 3 }>Filename</FormLabel>
-                        <Input
-                            id="ms-file-upload-input"
-                            type="text"
-                            placeholder="Please set filename..."
-                            width="400px"
-                            isRequired
-                        />
-                    <FormLabel pt={ 3 } pb={ 3 }>File Type</FormLabel>
-                        <Select
-                            id="ms-file-upload-type"
-                            placeholder="Please select the file type..."
-                            width="430px"
-                            isRequired
+                <Mutation
+                    variables={{
+                        title,
+                        fileURL,
+                        fileType
+                    }}
+                    mutation={ File_Upload }
+                >
+                    { (fileUpload, { data }) => (
+                        <form
+                            onSubmit = {
+                                async e => {
+                                    e.preventDefault();
+                                    await fileUpload();
+                                    handleSubmit();
+                                }
+                            }
                         >
-                            <option>Audio</option>
-                            <option>Video</option>
-                            <option>Document</option>
-                            <option>Compressed</option>
-                        </Select>
-                    <FormLabel pt={ 3 } pb={ 3 }>Select File</FormLabel>
-                        <Input
-                            id="ms-file-upload-select"
-                            type="file"
-                            placeholder=".Please select your file..."
-                            width="400px"
-                            isRequired
-                        />
-                    <Button
-                        id="ms-file-upload-submit"
-                        type="Submit"
-                        color="White"
-                        bg="Black"
-                        mt="15px"
-                        _onhover={{ color: "Black", bg: "White" }}
-                    >
-                        Submit
-                    </Button>
-                </FormControl>
+                            <FormControl size="md">
+                                <FormLabel pb={ 3 }>Filename</FormLabel>
+                                    <Input
+                                        id="ms-file-upload-input"
+                                        type="text"
+                                        placeholder="Please set filename..."
+                                        width="400px"
+                                        isRequired
+                                        value={ title }
+                                        onChange={ e => setTitle( e.target.value ) }
+                                    />
+                                <FormLabel pt={ 3 } pb={ 3 }>File Type</FormLabel>
+                                    <Select
+                                        id="ms-file-upload-type"
+                                        placeholder="Please select the file type..."
+                                        width="430px"
+                                        isRequired
+                                        value={ fileType }
+                                        onChange={ e => setFileType( e.target.value ) }
+                                    >
+                                        <option>Audio</option>
+                                        <option>Video</option>
+                                        <option>Document</option>
+                                        <option>Compressed</option>
+                                    </Select>
+                                <FormLabel pt={ 3 } pb={ 3 }>Select File</FormLabel>
+                                    <Input
+                                        id="ms-file-upload-select"
+                                        type="file"
+                                        placeholder=".Please select your file..."
+                                        width="400px"
+                                        onChange={ handleFileChange }
+                                    />
+                                <Button
+                                    id="ms-file-upload-submit"
+                                    type="submit"
+                                    color="White"
+                                    bg="Black"
+                                    mt="15px"
+                                    _onhover={{ color: "Black", bg: "White" }}
+                                >
+                                    Submit
+                                </Button>
+                            </FormControl>
+                        </form>
+                    )}
+                </Mutation>
             </Box>
         </div>
     )
