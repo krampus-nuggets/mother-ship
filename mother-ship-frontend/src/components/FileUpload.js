@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { File_Upload } from "../graphql/Mutations";
+import { s3Upload } from "../res/libs/awsLib";
+import { Storage } from "aws-amplify";
+import { Mutation } from "react-apollo";
 import { Box, Heading, FormControl, FormLabel, Select, Input, Button } from "@chakra-ui/core";
+import config from "../res/configs/config";
+
 
 const FileUpload = () => {
     return(
