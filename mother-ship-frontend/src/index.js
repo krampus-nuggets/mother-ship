@@ -45,9 +45,11 @@ const apolloClient = new ApolloClient({
 });
 
 ReactDOM.render(
+        <ApolloProvider client={ apolloClient }>
         <Router>
             <App />
-        </Router>,
+            </Router>
+        </ApolloProvider>,
         document.getElementById('root')
     );
 
