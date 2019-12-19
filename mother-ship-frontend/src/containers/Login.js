@@ -33,6 +33,8 @@ const Login = (props) => {
                                 autoFocus
                                 type="email"
                                 aria-describedby="ms-login-email-helper"
+                                value={ email }
+                                onChange={ e => setEmail(e.target.value) }
                             />
                             <FormHelperText color="white" id="ms-login-email-helper">
                                 Is there a keylogger running<span role="img" aria-label="I Don't Know">🤷🏾‍♂️</span>
