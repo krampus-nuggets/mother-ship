@@ -6,6 +6,10 @@ const Login = (props) => {
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
 
+    const validateForm = () => {
+        return email.length > 0 && password.length > 0;
+    }
+
     return(
         <div id="ms-login">
             <Box
