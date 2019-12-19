@@ -55,6 +55,7 @@ const Login = (props) => {
                             bg="Black"
                             color="White"
                             type="submit"
+                            isDisabled={ !validateForm() }
                         >
                             Login
                         </Button>
