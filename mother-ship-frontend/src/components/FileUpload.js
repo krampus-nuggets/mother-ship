@@ -13,6 +13,8 @@ const FileUpload = () => {
     const [ fileURL, setFileURL ] = useState("");
     const [ fileType, setFileType ] = useState("");
     let [ file ] = useState(null);
+    let [ fileSize ] = useState(null);
+    let [ pureFileSize ] = useState(null);
 
     const handleFileChange = async e => {
         file = e.target.files[0];
