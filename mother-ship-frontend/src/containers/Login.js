@@ -30,6 +30,7 @@ const Login = (props) => {
                         <FormLabel>Email Address</FormLabel>
                             <Input
                                 id="ms-login-email"
+                                autoFocus
                                 type="email"
                                 aria-describedby="ms-login-email-helper"
                             />
