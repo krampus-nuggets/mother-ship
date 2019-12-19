@@ -16,7 +16,32 @@ const FileUpload = () => {
 
     const handleFileChange = async e => {
         file = e.target.files[0];
-        console.log(file);
+        pureFileSize = e.target.files[0].size;
+        fileSize = humanFileSize(pureFileSize,true);
+        
+        // START
+        // Function - Digest bytes from pureFileSize to Human Readable format
+        function humanFileSize(bytes, si) {
+            const threshold = si ? 1000 : 1024;
+
+            if(Math.abs(bytes) < threshold) {
+                return bytes + " B";
+            }
+
+            const units = si
+                ? [ "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB" ]
+                : [ "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB" ];
+            
+            let u = -1;
+
+            do {
+                bytes /= threshold;
+                ++u;
+            } while(Math.abs(bytes) >= threshold && u < units.length -1);
+
+            return bytes.toFixed(1)+"."+units[u];
+        };
+        // END
 
         try {
             fileSize = file.size;
