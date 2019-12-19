@@ -44,6 +44,8 @@ const Login = (props) => {
                                 id="ms-login-password"
                                 type="password"
                                 aria-describedby="ms-login-password-helper"
+                                value={ password }
+                                onChange={ e => setPassword(e.target.value) }
                             />
                             <FormHelperText color="white" id="ms-login-password-helper">
                                 Here's a link to <Link href="https://haveibeenpwned.com/" isExternal>haveibeenpwned.com</Link> <span role="img" aria-label="Funny">😹</span>
