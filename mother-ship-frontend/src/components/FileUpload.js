@@ -44,6 +44,8 @@ const FileUpload = () => {
         };
         // END
 
+        // START
+        // Trigger file upload to S3 bucket + Use Cognito as Auth
         try {
             const attachment = file
             ?   await s3Upload(file)
@@ -59,6 +61,7 @@ const FileUpload = () => {
         catch(e) {
             alert(e);
         }
+        // END
     }
 
     const handleSubmit = async e => {
