@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { FormHelperText, FormLabel, FormControl, Button, Input, Heading, Box, Link } from "@chakra-ui/core";
 import "../styles/styles.css";
 
-const Login = () => {
+const Login = (props) => {
+    const [ email, setEmail ] = useState("");
+    const [ password, setPassword ] = useState("");
+
     return(
         <div id="ms-login">
             <Box
