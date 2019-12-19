@@ -10,6 +10,10 @@ const Login = (props) => {
         return email.length > 0 && password.length > 0;
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return(
         <div id="ms-login">
             <Box
