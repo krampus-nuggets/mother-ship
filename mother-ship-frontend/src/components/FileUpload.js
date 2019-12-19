@@ -137,7 +137,7 @@ const FileUpload = () => {
                                     color="White"
                                     bg="Black"
                                     mt="15px"
-                                    _onhover={{ color: "Black", bg: "White" }}
+                                    _hover={{ color: "Black", bg: "White" }}
                                 >
                                     Submit
                                 </Button>
