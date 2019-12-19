@@ -9,7 +9,6 @@ import config from "../res/configs/config";
 
 const FileUpload = () => {
     const [ title, setTitle ] = useState("");
-    let [ fileSize, setFileSize ] = useState("");
     const [ fileURL, setFileURL ] = useState("");
     const [ fileType, setFileType ] = useState("");
     let [ file ] = useState(null);
