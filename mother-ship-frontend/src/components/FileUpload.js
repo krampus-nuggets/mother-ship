@@ -45,8 +45,6 @@ const FileUpload = () => {
         // END
 
         try {
-            fileSize = file.size;
-
             const attachment = file
             ?   await s3Upload(file)
             :   null;
@@ -54,8 +52,6 @@ const FileUpload = () => {
             const fileURI = await Storage.get(`${ attachment }`, { level: "private" });
 
             setFileURL(`${ fileURI }`);
-
-            setFileSize(`${ file.size }`);
 
             console.log(file);
             alert(`Upload created with file -> ${ attachment } `)
