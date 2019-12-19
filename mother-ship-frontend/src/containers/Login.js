@@ -22,7 +22,10 @@ const Login = (props) => {
                 color="white"
             >
                 <Heading>Login</Heading>
-                <form size="md">
+                <form 
+                    size="md"
+                    onSubmit={ handleSubmit }
+                >
                     <FormControl size="md">
                         <FormLabel>Email Address</FormLabel>
                             <Input
