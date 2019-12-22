@@ -8,15 +8,15 @@ const NavBar = () => {
               width="15%"
               display="flex"
               justifyContent="space-between"
-              bg="#ff8b0f"
+              bg="white"
               roundedBottomLeft="15px"
               roundedBottomRight="15px"
               m="0 auto 0 auto  "
-              p={ 2 }
+              p={ 1 }
               color="white"
             >
               <Link href="/" m="auto" isInternal>
-                <Heading className="ms-nav-head" bg="black" color="#ff8b0f" rounded="md" p={ 2 } size="md" textAlign="center">
+                <Heading className="ms-nav-head" color="black" rounded="md" p={ 2 } size="md" textAlign="center">
                   Mother-Ship
                 </Heading>
               </Link>
