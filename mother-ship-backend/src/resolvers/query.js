@@ -26,3 +26,5 @@ export const getAllUploads = async (args, context) => {
         return e
     }
 }
+
+// CREATE - getAllUserUploads [QUERY] => Error Output
